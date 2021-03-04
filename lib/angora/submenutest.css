@@ -1,0 +1,6 @@
+body { height: 3000px; }
+.content { height: 500px; }
+.space { height: 100px; }
+.fixTitle { position: static; background: blue; color: white; text-align: center; width: 100%;}
+.fixme { position: static; /*padding: 7px 7px; */background: green; color: white; text-align: center; width: 100%; transition: all 300ms ease;}
+.top { position: fixed; top: 0; left: 0; padding: 0;}
