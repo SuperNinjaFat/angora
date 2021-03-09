@@ -8,32 +8,46 @@ body { height: 3000px; }
 
 .chapter {
     position: relative;
-    z-index:2;
+    z-index:11;
     background: red;
     text-align: center;
+    float: left;
+    top: 0;
+    left: 0;
+    text-align: left;
+    width: fit-content;
+    padding: 0 25px 0 25px;
+}
+.chapter-back {
+    position: absolute;
+    z-index:9;
+    background: red;
+    text-align: center;
+    /*width: 100%;*/
+
     /*
     transition: all 300ms ease;
     padding: 7px 7px;
     */
 }
 .chapter-text {
-    position: absolute;
-    z-index:50;
-    background: green;
+    position: relative;
+    z-index:12;
+    background: red;
     color: white;
     text-align: center;
     width: 100%;
 }
 .subchapter {
     position: relative;
-    z-index:9;
+    z-index:10;
     background: blue;
     text-align: center;
+    width: 100%;
 }
 
 .fixme {
     color: white;
-    width: 100%;
 }
 .top {
     position: fixed;
@@ -41,49 +55,23 @@ body { height: 3000px; }
     left: 0;
     padding: 0;
 }
+.top.chapter-back {
+    width: 100%;
+}
+.top.chapter {
+    display: block;
+}
 /*.top.chapter {*/
 /*    position: fixed;*/
 /*    top: 0;*/
 /*    left: 0;*/
 /*    width: 100%;*/
 /*}*/
-.top .chapter-text {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    width: fit-content;
-    text-align: left;
-    padding: 0 25px 0 25px;
-    content: "PLOOP";
-}
 
-
-.box{
-    width:200px;
-    height:200px;
-}
-
-.parent {
-    text-align: center;
-    width: 100%;
-    background-color:red;
-    z-index:2;
-}
-
-.child {
-    text-align: left;
-    background-color:green;
-    /*left:40px;*/
-    /*top:40px;*/
-    z-index:50;
-    position: absolute;
-}
-
-.nonchild {
-    text-align: right;
-    background-color:blue;
-    left:100px;
-    top:10px;
-    z-index:9;
-    position:absolute;
-}
+/*.top .chapter-text {*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    text-align: left;*/
+/*    width: fit-content;*/
+/*    padding: 0 25px 0 25px;*/
+/*}*/
