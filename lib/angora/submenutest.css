@@ -14,7 +14,6 @@ body { height: 3000px; }
     float: left;
     top: 0;
     left: 0;
-    text-align: left;
     width: fit-content;
     padding: 0 25px 0 25px;
 }
@@ -23,15 +22,9 @@ body { height: 3000px; }
     z-index:9;
     background: red;
     text-align: center;
-    /*width: 100%;*/
-
-    /*
-    transition: all 300ms ease;
-    padding: 7px 7px;
-    */
 }
 .chapter-text {
-    position: relative;
+    position: absolute;
     z-index:12;
     background: red;
     color: white;
@@ -53,7 +46,6 @@ body { height: 3000px; }
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0;
 }
 .top.chapter-back {
     width: 100%;
@@ -61,17 +53,3 @@ body { height: 3000px; }
 .top.chapter {
     display: block;
 }
-/*.top.chapter {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.top .chapter-text {*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    text-align: left;*/
-/*    width: fit-content;*/
-/*    padding: 0 25px 0 25px;*/
-/*}*/
